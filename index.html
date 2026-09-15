@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clover Nail Salon And Spa | Nail Salon, Gulf Harbour</title>
+<meta name="description" content="Manicures, spa pedicures, SNS and CND Shellac at Harbour Village, Gulf Harbour. Clover Nail Salon And Spa, rated 4.9 on Google. Call 09 428 0288 to book.">
+<meta property="og:title" content="Clover Nail Salon And Spa | Nail Salon, Gulf Harbour">
+<meta property="og:description" content="Manicures, spa pedicures, SNS and CND Shellac at Harbour Village, Gulf Harbour. Rated 4.9 on Google.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/hero-1.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231e6a4e'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='bold' fill='%23fdf2f6' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/hero-1.jpg" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16281f;
+  --ink-2:#1d332a;
+  --green:#1e6a4e;
+  --green-deep:#174c39;
+  --rose:#b93e68;
+  --rose-soft:#f7d9e4;
+  --bg:#f7f8f5;
+  --bone:#eef1ea;
+  --blush:#fbf1f4;
+  --text:#33413a;
+  --muted:#5c6c63;
+  --radius:16px;
+  --shadow:0 14px 34px rgba(23,76,57,.13);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Schibsted Grotesk",sans-serif;font-size:16px;line-height:1.7;color:var(--text);background:var(--bg);overflow-x:hidden}
+img{max-width:100%;image-orientation:from-image}
+h1,h2,h3,h4{font-family:"Gabarito",sans-serif;color:var(--ink);line-height:1.12;margin:0 0 .5em}
+h2{font-size:clamp(1.9rem,4.5vw,2.9rem);font-weight:700;letter-spacing:-.02em;text-wrap:balance}
+h3{font-size:1.3rem;font-weight:700}
+p{margin:0 0 1em}
+a{color:var(--green)}
+::selection{background:var(--rose-soft);color:var(--ink)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.svc-grid>*,.about-grid>*,.crew-grid>*,.rev-grid>*,.contact-card>*,.foot-grid>*{min-width:0}
+section{padding:84px 0}
+@media(min-width:768px){section{padding:110px 0}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:"Gabarito",sans-serif;font-weight:600;font-size:1.02rem;line-height:1;padding:0 28px;height:54px;border-radius:999px;text-decoration:none;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease);white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn svg{flex:none}
+.btn-primary{background:var(--green);color:#f4faf7}
+.btn-primary:hover{background:var(--green-deep);transform:translateY(-2px);box-shadow:0 12px 26px rgba(23,76,57,.28)}
+.btn-rose{background:var(--rose);color:#fff7fa}
+.btn-rose:hover{background:#9f345a;transform:translateY(-2px);box-shadow:0 12px 26px rgba(185,62,104,.32)}
+.btn-ghost{background:rgba(255,255,255,.13);color:#fff;border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:rgba(255,255,255,.24);transform:translateY(-2px)}
+
+/* intro overlay */
+#intro{position:fixed;inset:0;z-index:200;background:var(--green-deep);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;transition:opacity .7s var(--ease),visibility .7s}
+#intro .intro-name{font-family:"Gabarito",sans-serif;font-weight:800;font-size:clamp(2rem,6vw,3.4rem);color:#f4faf7;letter-spacing:-.02em;opacity:0;transform:translateY(14px);animation:introUp .8s var(--ease) .15s forwards}
+#intro .intro-sub{font-size:.95rem;letter-spacing:.32em;text-transform:uppercase;color:var(--rose-soft);opacity:0;animation:introUp .8s var(--ease) .4s forwards}
+#intro.done{opacity:0;visibility:hidden;pointer-events:none}
+@keyframes introUp{to{opacity:1;transform:translateY(0)}}
+
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,248,245,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(23,76,57,.08);transition:box-shadow .3s}
+header.scrolled{box-shadow:0 6px 24px rgba(22,40,31,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{font-family:"Gabarito",sans-serif;text-decoration:none;line-height:1;display:flex;flex-direction:column;gap:2px}
+.logo .l1{font-weight:800;font-size:1.5rem;color:var(--green);letter-spacing:-.02em}
+.logo .l2{font-size:.72rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--rose)}
+.nav-links{display:none;align-items:center;gap:30px;list-style:none;margin:0;padding:0}
+.nav-links a{font-family:"Gabarito",sans-serif;font-weight:600;font-size:.98rem;color:var(--ink);text-decoration:none;transition:color .25s}
+.nav-links a:hover{color:var(--rose)}
+.nav-phone{display:none;align-items:center;gap:8px;height:42px;padding:0 18px;border-radius:999px;background:var(--green);color:#f4faf7;font-family:"Gabarito",sans-serif;font-weight:600;font-size:.95rem;line-height:1;text-decoration:none;transition:background .25s,transform .25s}
+.nav-phone:hover{background:var(--green-deep);transform:translateY(-1px)}
+.nav-burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:46px;height:46px;padding:11px;background:none;border:0;cursor:pointer}
+.nav-burger span{display:block;height:2px;background:var(--ink);border-radius:2px;transition:transform .3s var(--ease),opacity .3s}
+.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger.open span:nth-child(2){opacity:0}
+.nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+#mobileMenu{display:none;flex-direction:column;gap:4px;padding:10px 20px 22px;background:rgba(247,248,245,.98);border-bottom:1px solid rgba(23,76,57,.1)}
+#mobileMenu.open{display:flex}
+#mobileMenu a{font-family:"Gabarito",sans-serif;font-weight:600;font-size:1.1rem;color:var(--ink);text-decoration:none;padding:12px 4px;border-bottom:1px solid rgba(23,76,57,.07)}
+#mobileMenu a.m-call{margin-top:10px;background:var(--green);color:#f4faf7;border:0;border-radius:999px;text-align:center;padding:14px}
+@media(min-width:900px){
+  .nav-links{display:flex}
+  .nav-phone{display:inline-flex}
+  .nav-burger,#mobileMenu{display:none!important}
+}
+
+/* hero */
+.hero{position:relative;min-height:100dvh;display:flex;align-items:center;background:var(--green-deep);overflow:hidden;padding:110px 0 70px}
+.hero-slides{position:absolute;inset:0}
+.hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s ease}
+.hero-slide.active{opacity:1}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,52,40,.62) 0%,rgba(20,52,40,.5) 45%,rgba(16,42,32,.72) 100%)}
+.hero-inner{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:0 20px;width:100%}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:"Gabarito",sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:var(--rose-soft);margin-bottom:18px}
+.hero-eyebrow svg{flex:none}
+.hero h1{font-size:clamp(2.4rem,5.8vw,3.9rem);font-weight:800;color:#fdfdfb;letter-spacing:-.025em;max-width:20ch;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--rose-soft)}
+.hero-sub{font-size:clamp(1.02rem,2vw,1.2rem);color:rgba(250,252,250,.92);max-width:46ch;margin-bottom:30px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:34px}
+.hero-review{display:inline-flex;align-items:center;gap:14px;padding:14px 20px;border-radius:14px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(10px);color:#fff}
+.hero-review .stars{color:#f6c76d;letter-spacing:2px;font-size:1.02rem;line-height:1}
+.hero-review .hr-text{font-size:.95rem;line-height:1.4}
+.hero-review .hr-text strong{font-family:"Gabarito",sans-serif;font-weight:700}
+.hero-review a{color:#fff}
+
+/* section headings */
+.sec-head{max-width:640px;margin-bottom:46px}
+.sec-head p{color:var(--muted);font-size:1.05rem}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:26px}
+@media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 20px rgba(22,40,31,.07);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.svc-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.svc-card figure{margin:0;aspect-ratio:4/3;overflow:hidden}
+.svc-card img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.85) contrast(1.05);transition:transform .6s var(--ease)}
+.svc-card:hover img{transform:scale(1.05)}
+.svc-body{padding:22px 24px 26px}
+.svc-tag{display:inline-flex;align-items:center;gap:7px;font-family:"Gabarito",sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);margin-bottom:8px}
+.svc-body p{margin:0;color:var(--muted);font-size:.97rem}
+
+/* about */
+.about{background:var(--bone)}
+.about-grid{display:grid;grid-template-columns:1fr;gap:44px;align-items:center}
+@media(min-width:900px){.about-grid{grid-template-columns:1fr 1fr;gap:64px}}
+.about-photo{position:relative}
+.about-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);filter:saturate(.85) contrast(1.05);box-shadow:var(--shadow);display:block}
+.about-photo::after{content:"Harbour Village, Gulf Harbour";position:absolute;left:18px;bottom:18px;background:var(--green);color:#f4faf7;font-family:"Gabarito",sans-serif;font-weight:600;font-size:.85rem;line-height:1;padding:12px 18px;border-radius:999px}
+.about-check{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-direction:column;gap:14px}
+.about-check li{display:flex;gap:12px;align-items:flex-start;font-weight:500;color:var(--ink-2)}
+.about-check svg{flex:none;margin-top:3px;color:var(--rose)}
+
+/* crew */
+.crew-note{font-size:.85rem;color:var(--muted);display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid rgba(23,76,57,.12);border-radius:999px;padding:7px 14px;line-height:1.45}
+.crew-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:38px}
+@media(min-width:700px){.crew-grid{grid-template-columns:repeat(3,1fr)}}
+.crew-card{background:#fff;border-radius:var(--radius);padding:34px 26px;text-align:center;box-shadow:0 6px 20px rgba(22,40,31,.06);transition:transform .35s var(--ease)}
+.crew-card:hover{transform:translateY(-5px)}
+.crew-avatar{width:88px;height:88px;margin:0 auto 18px;border-radius:50%;background:var(--green-deep);color:var(--rose-soft);display:flex;align-items:center;justify-content:center;font-family:"Gabarito",sans-serif;font-weight:800;font-size:1.7rem;border:3px solid var(--rose)}
+.crew-card h3{margin-bottom:2px}
+.crew-role{font-size:.85rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--rose);margin-bottom:10px}
+.crew-card p{margin:0;color:var(--muted);font-size:.95rem}
+
+/* reviews */
+.reviews{background:var(--blush)}
+.rev-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:40px}
+.rev-score{display:flex;align-items:center;gap:14px}
+.rev-score .big{font-family:"Gabarito",sans-serif;font-weight:800;font-size:3rem;color:var(--ink);line-height:1}
+.rev-score .stars{color:#e2a93b;font-size:1.1rem;letter-spacing:2px;line-height:1.3}
+.rev-score .cnt{font-size:.92rem;color:var(--muted)}
+.rev-grid{display:grid;grid-template-columns:1fr;gap:24px}
+@media(min-width:800px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:0 6px 20px rgba(22,40,31,.06);display:flex;flex-direction:column;gap:12px}
+.rev-card .stars{color:#e2a93b;letter-spacing:2px;font-size:.98rem}
+.rev-card blockquote{margin:0;font-size:.99rem;color:var(--ink-2)}
+.rev-card .who{font-family:"Gabarito",sans-serif;font-weight:700;color:var(--ink);font-size:.95rem}
+.rev-card .who span{display:block;font-family:"Schibsted Grotesk",sans-serif;font-weight:400;color:var(--muted);font-size:.83rem}
+.rev-badge{margin-top:26px;font-size:.84rem;color:var(--muted)}
+
+/* review banner */
+.rev-banner{background:var(--green-deep);padding:70px 0}
+.rev-banner .inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:26px}
+.rev-banner h2{color:#f6faf7;margin:0;font-size:clamp(1.6rem,3.6vw,2.3rem)}
+.rev-banner p{color:rgba(244,250,247,.8);margin:8px 0 0;max-width:44ch}
+
+/* contact */
+.contact-card{background:var(--green-deep);border-radius:22px;overflow:hidden;display:grid;grid-template-columns:1fr;box-shadow:0 20px 50px rgba(23,76,57,.25)}
+@media(min-width:900px){.contact-card{grid-template-columns:1.05fr 1fr}}
+.contact-map{min-height:320px;order:2}
+@media(min-width:900px){.contact-map{order:1}}
+.contact-map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+.contact-info{order:1;padding:40px 28px}
+@media(min-width:900px){.contact-info{order:2;padding:52px 48px}}
+.contact-info h2{color:#f6faf7}
+.contact-info>p{color:rgba(244,250,247,.82);margin-bottom:26px}
+.contact-btns{display:flex;flex-direction:column;gap:12px;margin-bottom:30px}
+.contact-btns .btn{width:100%}
+.c-rows{display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
+.c-row{display:flex;gap:13px;align-items:flex-start;color:rgba(246,250,247,.92);font-size:.97rem;line-height:1.5}
+.c-row svg{flex:none;margin-top:2px;color:var(--rose-soft)}
+.c-row a{color:#fff;text-decoration:none}
+.c-row a:hover{text-decoration:underline}
+.socials{display:flex;gap:12px}
+.socials a{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.12);color:#fff;transition:background .25s,transform .25s}
+.socials a:hover{background:var(--rose);transform:translateY(-2px)}
+
+/* footer */
+footer{background:var(--ink);color:rgba(240,245,241,.75);padding:56px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:34px;margin-bottom:38px}
+@media(min-width:800px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.foot-logo .l1{font-family:"Gabarito",sans-serif;font-weight:800;font-size:1.5rem;color:#f4faf7;letter-spacing:-.02em}
+.foot-logo .l2{font-size:.72rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:#ec9fbe}
+footer h3{color:#f4faf7;font-size:1rem;margin-bottom:14px}
+footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+footer a{color:rgba(240,245,241,.75);text-decoration:none;transition:color .25s}
+footer a:hover{color:var(--rose-soft)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.85rem;color:rgba(240,245,241,.55)}
+footer .socials a{background:rgba(255,255,255,.08)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+  #intro{display:none}
+}
+</style>
+</head>
+<body>
+
+<div id="intro" aria-hidden="true">
+  <div class="intro-name">Clover</div>
+  <div class="intro-sub">Nail Salon &amp; Spa</div>
+</div>
+
+<header id="siteHeader">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Clover Nail Salon And Spa, home">
+      <span class="l1">Clover</span>
+      <span class="l2">Nail Salon &amp; Spa</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Find us</a></li>
+    </ul>
+    <a class="nav-phone" href="tel:+6494280288">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      09 428 0288
+    </a>
+    <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobileMenu" aria-label="Mobile">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Find us</a>
+    <a class="m-call" href="tel:+6494280288">Call 09 428 0288</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero" id="home" aria-label="Welcome">
+  <div class="hero-slides" aria-hidden="true">
+    <div class="hero-slide active" style="background-image:url('img/hero-1.jpg')"></div>
+    <div class="hero-slide" data-src="img/hero-2.jpg"></div>
+    <div class="hero-slide" data-src="img/hero-3.jpg"></div>
+  </div>
+  <div class="hero-inner">
+    <span class="hero-eyebrow">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Gulf Harbour, Whangaparaoa
+    </span>
+    <h1>Nails worth the trip to <em>Harbour Village</em></h1>
+    <p class="hero-sub">Manicures, spa pedicures, SNS and CND Shellac, finished carefully and built to last past week three.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-rose" href="tel:+6494280288">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call to book
+      </a>
+      <a class="btn btn-ghost" href="#contact">Visit the salon</a>
+    </div>
+    <div class="hero-review">
+      <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="hr-text"><strong>4.9 on Google</strong> from 48 reviews</span>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>What we do all day, every day</h2>
+      <p>Nails are the whole job here, not a sideline. Every service starts with clean, sanitised tools and ends with a finish we are happy to put our name on.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card reveal">
+        <figure><img src="img/svc-manicure.jpg" alt="Nail technician painting a client's nails" width="1000" height="667" loading="lazy"></figure>
+        <div class="svc-body">
+          <span class="svc-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            Hands
+          </span>
+          <h3>Manicures</h3>
+          <p>Shape, cuticle tidy, buff and polish. In and out with tidy hands, or settle in and add colour that suits you.</p>
+        </div>
+      </article>
+      <article class="svc-card reveal">
+        <figure><img src="img/svc-pedicure.jpg" alt="Rolled towel, lotion and pink tulips set up for a spa treatment" width="1000" height="667" loading="lazy"></figure>
+        <div class="svc-body">
+          <span class="svc-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h20M2 12a10 10 0 0 1 20 0M6 12a6 6 0 0 1 12 0"/></svg>
+            Feet
+          </span>
+          <h3>Spa pedicures</h3>
+          <p>Warm soak, scrub, hard skin work and a proper massage before polish. Bring a book and stay a while.</p>
+        </div>
+      </article>
+      <article class="svc-card reveal">
+        <figure><img src="img/svc-gel.jpg" alt="Grey, white and glitter gel polish on square nails" width="1000" height="1000" loading="lazy"></figure>
+        <div class="svc-body">
+          <span class="svc-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            Colour
+          </span>
+          <h3>Shellac &amp; gel polish</h3>
+          <p>CND Shellac and gel colour cured to a hard, glossy finish. No dry time, no smudges on the drive home.</p>
+        </div>
+      </article>
+      <article class="svc-card reveal">
+        <figure><img src="img/svc-sns.jpg" alt="Long pink dip powder nails against a pink background" width="1000" height="1500" loading="lazy"></figure>
+        <div class="svc-body">
+          <span class="svc-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg>
+            Strength
+          </span>
+          <h3>SNS &amp; extensions</h3>
+          <p>Dipping powder and extensions in almond, square or coffin. Strong nails that still look like yours.</p>
+        </div>
+      </article>
+      <article class="svc-card reveal">
+        <figure><img src="img/svc-art.jpg" alt="Colourful abstract nail art in blue, orange and yellow" width="1000" height="1500" loading="lazy"></figure>
+        <div class="svc-body">
+          <span class="svc-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5zM2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+            Art
+          </span>
+          <h3>Nail art &amp; seasonal sets</h3>
+          <p>Cat eye, chrome, French tips, charms and hand-painted details. Show us a photo and we will match it.</p>
+        </div>
+      </article>
+      <article class="svc-card reveal">
+        <figure><img src="img/svc-occasion.jpg" alt="Deep red almond nails with hand-painted lettering" width="1000" height="667" loading="lazy"></figure>
+        <div class="svc-body">
+          <span class="svc-tag">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            Occasions
+          </span>
+          <h3>Occasion sets</h3>
+          <p>Weddings, birthdays, holidays and school balls. Book the whole group in together and arrive sorted.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo reveal">
+      <img src="img/about-salon.jpg" alt="Bright modern salon interior with mirrors and comfortable chairs" width="1400" height="934" loading="lazy">
+    </div>
+    <div class="reveal">
+      <h2>The little green salon by the marina</h2>
+      <p>Clover Nail Salon And Spa sits in the Harbour Village shops on Harbour Village Drive, a short walk from the Gulf Harbour marina. Locals from across the Whangaparaoa Peninsula come in for nails that are done carefully, not quickly.</p>
+      <p>You will not be rushed out of the chair. The team checks shape and length with you before any colour goes on, and fixes anything you are not sure about before you leave.</p>
+      <ul class="about-check">
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          Locally owned, part of the Harbour Village shops
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          Sanitised tools and fresh files for every client
+        </li>
+        <li>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          Bookings by phone, walk-ins welcome when a chair is free
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="crew">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Who looks after you</h2>
+      <p>A small team who do nails all day and still get excited about a good cat eye finish.</p>
+      <span class="crew-note">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        Example team, real names and photos added with the full site
+      </span>
+    </div>
+    <div class="crew-grid">
+      <div class="crew-card reveal">
+        <div class="crew-avatar" aria-hidden="true">CL</div>
+        <h3>Owner</h3>
+        <div class="crew-role">Senior nail technician</div>
+        <p>Runs the salon and sets the standard. The one to ask for tricky shapes and colour matching.</p>
+      </div>
+      <div class="crew-card reveal">
+        <div class="crew-avatar" aria-hidden="true">NT</div>
+        <h3>Nail technician</h3>
+        <div class="crew-role">SNS &amp; extensions</div>
+        <p>Fast, tidy and gentle with natural nails. Handles most of the dip powder and extension work.</p>
+      </div>
+      <div class="crew-card reveal">
+        <div class="crew-avatar" aria-hidden="true">ST</div>
+        <h3>Spa therapist</h3>
+        <div class="crew-role">Pedicures &amp; care</div>
+        <p>Looks after the pedicure chairs. Known for the foot massage people quietly extend by ten minutes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="rev-top reveal">
+      <div>
+        <h2 style="margin-bottom:6px">What clients say</h2>
+        <div class="rev-score">
+          <span class="big">4.9</span>
+          <span>
+            <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>
+            <span class="cnt">from 48 Google reviews</span>
+          </span>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Clover+Nail+Salon+And+Spa+164+Harbour+Village+Drive+Gulf+Harbour" target="_blank" rel="noopener">See all our Google reviews</a>
+    </div>
+    <div class="rev-grid">
+      <article class="rev-card reveal">
+        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <blockquote>Booked a spa pedicure on a whim and it was the most relaxed hour of my week. Nobody rushed me, and my toes still look brand new.</blockquote>
+        <div class="who">Sharon M. <span>Gulf Harbour</span></div>
+      </article>
+      <article class="rev-card reveal">
+        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <blockquote>My SNS set lasted almost four weeks without a chip. They took real care with shaping and my nails felt healthy underneath.</blockquote>
+        <div class="who">Priya K. <span>Stanmore Bay</span></div>
+      </article>
+      <article class="rev-card reveal">
+        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <blockquote>They fixed a set another salon botched and would not let me leave until every nail was right. This is my salon now.</blockquote>
+        <div class="who">Emma T. <span>Manly</span></div>
+      </article>
+    </div>
+    <p class="rev-badge reveal">Example reviews written for this demo. Clover's real Google reviews, rated 4.9 from 48, plug straight in here.</p>
+  </div>
+</section>
+
+<section class="rev-banner" aria-label="Leave a review">
+  <div class="wrap inner">
+    <div class="reveal">
+      <h2>Happy with your nails?</h2>
+      <p>A quick Google review helps other locals find the salon.</p>
+    </div>
+    <a class="btn btn-rose reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Clover+Nail+Salon+And+Spa+164+Harbour+Village+Drive+Gulf+Harbour" target="_blank" rel="noopener">Leave us a review</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Find us in Harbour Village</h2>
+      <p>Parking right outside the shops, and the marina a short stroll away for afterwards.</p>
+    </div>
+    <div class="contact-card reveal">
+      <div class="contact-map">
+        <iframe title="Map showing Clover Nail Salon And Spa at 164 Harbour Village Drive, Gulf Harbour" src="https://www.google.com/maps?q=Clover%20Nail%20Salon%20And%20Spa%2C%20164%20Harbour%20Village%20Drive%2C%20Gulf%20Harbour%2C%20Whangaparaoa&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <div class="contact-info">
+        <h2>Book a chair</h2>
+        <p>Call ahead for weekends, they fill fast. Weekday walk-ins often get straight in.</p>
+        <div class="contact-btns">
+          <a class="btn btn-rose" href="tel:+6494280288">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Clover Nail Salon
+          </a>
+          <a class="btn btn-ghost" data-gmail data-user="cloverdins109" data-domain="gmail.com" data-su="Booking%20enquiry" href="#contact">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            Email the salon
+          </a>
+        </div>
+        <div class="c-rows">
+          <div class="c-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Unit L, 164 Harbour Village Drive, Gulf Harbour, Whangaparaoa 0930</span>
+          </div>
+          <div class="c-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span><a href="tel:+6494280288">09 428 0288</a></span>
+          </div>
+          <div class="c-row">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>Open from 10am most days. Call to check today's hours.</span>
+          </div>
+        </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/clovernails_nz/" target="_blank" rel="noopener" aria-label="Clover Nail Salon on Instagram">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/clovernailsalon/" target="_blank" rel="noopener" aria-label="Clover Nail Salon on Facebook">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/search?q=Clover%20Nail%20Salon%20And%20Spa%20Auckland" target="_blank" rel="noopener" aria-label="Find Clover Nail Salon on TikTok">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <div class="l1">Clover</div>
+          <div class="l2">Nail Salon &amp; Spa</div>
+        </div>
+        <p style="margin-top:14px;max-width:34ch">Manicures, pedicures, SNS and Shellac in the Harbour Village shops, Gulf Harbour.</p>
+        <div class="socials" style="margin-top:6px">
+          <a href="https://www.instagram.com/clovernails_nz/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/clovernailsalon/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/search?q=Clover%20Nail%20Salon%20And%20Spa%20Auckland" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Find us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+6494280288">09 428 0288</a></li>
+          <li>164 Harbour Village Drive</li>
+          <li>Gulf Harbour, Whangaparaoa 0930</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="year">2026</span> Clover Nail Salon And Spa. All rights reserved.</span>
+      <span><a href="terms.html">Terms &amp; Conditions</a> &nbsp;&nbsp; <a href="privacy.html">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // intro overlay
+  var intro = document.getElementById('intro');
+  if (intro) {
+    var closeIntro = function(){ intro.classList.add('done'); };
+    if (reduced) { closeIntro(); }
+    else { window.setTimeout(closeIntro, 1600); }
+  }
+
+  // sticky header shadow
+  var header = document.getElementById('siteHeader');
+  var io0 = new IntersectionObserver(function(entries){
+    header.classList.toggle('scrolled', !entries[0].isIntersecting);
+  }, {rootMargin: '30px 0px 0px 0px'});
+  var sentinel = document.createElement('div');
+  document.body.prepend(sentinel);
+  io0.observe(sentinel);
+
+  // mobile menu
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+    });
+  });
+
+  // hero rotation (lazy-load slides 2+)
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.hero-slide'));
+  slides.forEach(function(s){
+    var src = s.getAttribute('data-src');
+    if (src) { s.style.backgroundImage = "url('" + src + "')"; }
+  });
+  if (!reduced && slides.length > 1) {
+    var cur = 0;
+    window.setInterval(function(){
+      slides[cur].classList.remove('active');
+      cur = (cur + 1) % slides.length;
+      slides[cur].classList.add('active');
+    }, 6000);
+  }
+
+  // scroll reveals
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // gmail compose buttons
+  document.querySelectorAll('a[data-gmail]').forEach(function(a){
+    var to = a.getAttribute('data-user') + '@' + a.getAttribute('data-domain');
+    a.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + '&su=' + (a.getAttribute('data-su') || '') + '&body=' + (a.getAttribute('data-body') || '');
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  // year
+  var y = document.getElementById('year');
+  if (y) { y.textContent = String(new Date().getFullYear()); }
+})();
+</script>
+</body>
+</html>
