@@ -1,0 +1,6 @@
+
+/* Clear photography with contrast only behind the hero copy. */
+.hero::after{background:linear-gradient(90deg,rgba(19,17,12,.72) 0%,rgba(19,17,12,.48) 34%,rgba(19,17,12,.08) 65%,transparent 85%)}
+.hero h1,.hero-sub{color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.22)}
+.hero h1 em,.hero-eyebrow{color:#f4d98d}
+@media(max-width:700px){.hero::after{background:linear-gradient(90deg,rgba(19,17,12,.7),rgba(19,17,12,.25))}}
